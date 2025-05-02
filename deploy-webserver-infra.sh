@@ -1,6 +1,6 @@
 
 #!/bin/bash
-# This is an example of Impressive Infrastructure as Code (IaC) using AWS CLI
+# NB05022025 - This is an example of Impressive Infrastructure as Code (IaC) using AWS CLI
 # This script creates a web server infrastructure with an Application Load Balancer (ALB) and Auto Scaling Group (ASG)
 
 # Exit on error
