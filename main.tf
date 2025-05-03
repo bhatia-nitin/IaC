@@ -1,4 +1,4 @@
-/* NB05022025 - This is an example of Declarative Infrastructure as Code (IaC) using Terraform. 
+/* NB05022025 -test This is an example of Declarative Infrastructure as Code (IaC) using Terraform. 
    It is designed to be run in a local environment with AWS credentials configured. 
    The script creates a web application architecture on AWS, including VPC, subnets, 
    security groups, an Application Load Balancer (ALB), and an Auto Scaling Group (ASG). 
