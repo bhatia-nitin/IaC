@@ -13,7 +13,7 @@ PUBLIC_SUBNET_1_CIDR="10.0.1.0/24"
 PUBLIC_SUBNET_2_CIDR="10.0.2.0/24"
 AZ_1="us-east-2a"
 AZ_2="us-east-2b"
-AMI_ID="ami-0bc5a7bb65b2d8b84"  # Amazon Linux 2 AMI
+AMI_ID="ami-085386e29e44dacd7"  # Amazon Linux 2 AMI
 
 echo "Creating web server infrastructure..."
 
