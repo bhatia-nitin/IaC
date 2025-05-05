@@ -165,7 +165,7 @@ resource "aws_lb_listener" "web_listener" {
 # Launch Template and Auto Scaling Group
 resource "aws_launch_template" "web_template" {
   name_prefix   = "web-server-"
-  image_id      = "ami-0c55b159cbfafe1f0"  # Amazon Linux 2 AMI
+  image_id      = "ami-085386e29e44dacd7"  # Amazon Linux 2 AMI
   instance_type = "t2.micro"
   
   vpc_security_group_ids = [aws_security_group.web_sg.id]
