@@ -7,7 +7,7 @@
    Please review the script carefully before running it in your environment. */
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 # VPC and networking
@@ -23,7 +23,7 @@ resource "aws_vpc" "web_vpc" {
 resource "aws_subnet" "public_subnet_1" {
   vpc_id            = aws_vpc.web_vpc.id
   cidr_block        = "10.0.1.0/24"
-  availability_zone = "us-east-1a"
+  availability_zone = "us-east-2a"
   
   tags = {
     Name = "Public Subnet 1"
@@ -33,7 +33,7 @@ resource "aws_subnet" "public_subnet_1" {
 resource "aws_subnet" "public_subnet_2" {
   vpc_id            = aws_vpc.web_vpc.id
   cidr_block        = "10.0.2.0/24"
-  availability_zone = "us-east-1b"
+  availability_zone = "us-east-2b"
   
   tags = {
     Name = "Public Subnet 2"
@@ -165,7 +165,7 @@ resource "aws_lb_listener" "web_listener" {
 # Launch Template and Auto Scaling Group
 resource "aws_launch_template" "web_template" {
   name_prefix   = "web-server-"
-  image_id      = "ami-085386e29e44dacd7"  # Amazon Linux 2 AMI
+  image_id      = "ami-096af71d77183c8f8"  # Amazon Linux 2 AMI
   instance_type = "t2.micro"
   
   vpc_security_group_ids = [aws_security_group.web_sg.id]
