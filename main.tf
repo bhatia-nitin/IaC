@@ -22,7 +22,7 @@ resource "aws_instance" "example" {
 
 # Create an S3 bucket
 resource "aws_s3_bucket" "example" {
-  bucket = "sample-terraform-bucket2211223" # Unique bucket name
+  bucket = "sample-tf-bucket221122223" # Unique bucket name
   tags = {
     Name = "example-bucket"
   }
